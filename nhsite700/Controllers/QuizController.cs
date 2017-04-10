@@ -170,7 +170,7 @@ namespace nhsite700.Controllers
             {
                 group2++;
             }
-            else if (collection["question8"] == "Batman vs Supemrman")
+            else if (collection["question8"] == "Batman vs Superman")
             {
                 group3++;
             }
@@ -238,7 +238,7 @@ namespace nhsite700.Controllers
             {
                 group1++;
             }
-            else if (collection["question12"] == "Agents of Sheild")
+            else if (collection["question12"] == "Agents of Shield")
             {
                 group3++;
             }
@@ -251,7 +251,7 @@ namespace nhsite700.Controllers
             {
                 group1++;
             }
-            else if (collection["question13"] == "Cosplying as your favorite character")
+            else if (collection["question13"] == "Cosplaying as your favorite character")
             {
                 group2++;
             }
@@ -285,7 +285,7 @@ namespace nhsite700.Controllers
             {
                 group1++;
             }
-            else if (collection["question15"] == "TechChrunch")
+            else if (collection["question15"] == "TechCrunch")
             {
                 group4++;
             }
