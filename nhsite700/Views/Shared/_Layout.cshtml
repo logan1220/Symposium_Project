@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+     <header style="top: 0;">
+            <div id="logo" class="menuUp">
+                <h1>n3rd herd.</h1>
+                <div id="navToggle"><a href="#">Menu</a></div>
+            </div>
+            <nav>
+	            <ul>
+		            <li><a href="~/Home/Index">Home</a></li>
+		            <li><a href="#">About Us<span class="toggle">more</span><span class="caret"></span></a>
+			            <nav>
+				            <ul>
+					            <li><a href="~/Home/About">Our Purpose</a></li>
+					            <li><a href="~/Home/About">Our Team</a></li>
+	                        </ul>
+	                    </nav>
+	                </li>
+		            <li><a href="~/Contact">Contact Us</a></li>
+                    @using Microsoft.AspNet.Identity
+                    @if (Request.IsAuthenticated)
+                    {
+                        <li>
+                            @Html.ActionLink("Your Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Take Quiz", "Index", "Quiz", routeValues: null, htmlAttributes: new { title = "Quiz" })
+                        </li>
+                        <li>
+                            @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                            {
+                                @Html.AntiForgeryToken()
+                                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+                            }
+                        </li>
+                    }
+                    else
+                    {
+                            <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                    }
+	            </ul>
+            </nav>
+        </header>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <small>&copy; @DateTime.Now.Year - NerdHerd - All rights reserved.</small>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

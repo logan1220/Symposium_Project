@@ -1,0 +1,362 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@using (Html.BeginForm("Index", "Quiz", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @id = "quiz-form", role = "form" }))
+{
+<div>
+    <div class="well">
+        <h2>Take the Quiz to get your discord link!</h2>
+        <br />
+
+        <div>
+            <legend class="control-label">Which would you rather do with your spare time?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question1" value="Play video games"/>
+                    Play video games
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question1" value="Watch Anime" size="30"/>
+                    Watch Anime
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question1" value="Read a Comic Book" size="30"/>
+                    Read a Comic Book
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question1" value="Catch up on Tech news" size="30"/>
+                    Catch up on Tech news
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Which would you rather recieve as a gift?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question2" GroupName="q2" value="A new iPhone"  />
+                    A new iPhone
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question2" GroupName="q2" value="Arcade Machine" />
+                    Arcade Machine
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question2" GroupName="q2" value="Tickets to Marvel's Infinity War" />
+                    Tickets to Marvel's Infinity War
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question2" GroupName="q2" value="A Trip to Japan" />
+                    A Trip to Japan
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Which would you rather see made into a Netflix Original series?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question3" value="A live action Naruto film"  />
+                    A live action Naruto film
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question3" value="Star Wars and Star Trek mash-up"  />
+                    Star Wars and Star Trek mash-up
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question3" value="Marvel vs DC"  />
+                    Marvel vs DC
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question3" value="Assassin's Creed"  />
+                    Assassin's Creed
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Out of the four options, which would you rather visit?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question4" value="Japan"  />
+                    Japan
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question4" value="Silicon Valley"  />
+                    Silicon Valley
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question4" value="Hyrule"  />
+                    Hyrule
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question4" value="Stan Lee's Mansion"  />
+                    Stan Lee's Mansion
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Where is your favorite place to hang out at school?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question5" value="Anime Club"  />
+                    Anime Club
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question5"  value="The Game Room" />
+                    The Game Room
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question5"  value="A Computer Lab" />
+                    A Computer Lab
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question5" value="The Library"  />
+                    The Library
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What job would be the most enjoyable?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question6" value="Tech Reviewer"  />
+                    Tech Reviewer
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question6" value="Comic Book Artist"  />
+                    Comic Book Artist
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question6"  value="Video Game Tester" />
+                    Video Game Tester
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question6" value="Professional Cosplayer"  />
+                    Professional Cosplayer
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What is your favorite movie genre?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question7"  value="SyFy" />
+                    SyFy
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question7" value="Fantasy"  />
+                    Fantasy
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question7" value="Animation"  />
+                    Animation
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question7" value="Super Hero"  />
+                    Super Hero
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">In your opinion, what is the ultimate face off?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question8" value="Apple vs Microsoft"  />
+                    Apple vs Microsoft
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question8"  value="Xbox vs Sony" />
+                    Xbox vs Sony
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question8" value="Naruto vs Sasuke"  />
+                    Naruto vs Sasuke
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question8" value="Batman vs Supemrman"  />
+                    Batman vs Supemrman
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Who is the bigger role model to you?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question9"  value="Stan Lee" />
+                    Stan Lee
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question9" value="Steve Jobs"  />
+                    Steve Jobs
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question9"  value="Hideo Kojima" />
+                    Hideo Kojima
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question9"  value="Akira Toryama" />
+                    Akira Toryama
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What is you favorite store to go to?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question10"  value="Gamestop" />
+                    Gamestop
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question10"  value="Oriental Market" />
+                    Oriental Market
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question10"   value="Barnes & Nobel"/>
+                    Barnes & Nobel
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question10" value="Best Buy"  />
+                    Best Buy
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Who makes your favorite movies?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question11"  value="Marvel" />
+                    Marvel
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question11"  value="Michael Bay" />
+                    Michael Bay
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question11"  value="Quentin Tarantino" />
+                    Quentin Tarantino
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question11" value="Studio Ghibli"  />
+                    Studio Ghibli
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What show do you enjoy most?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question12"  value="Attack on Titan" />
+                    Attack on Titan
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question12"  value="Mythbusters" />
+                    Mythbusters
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question12" value="The Walking Dead"  />
+                    The Walking Dead
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question12" value="Agents of Sheild"   />
+                    Agents of Sheild
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What would you spend your ideal weekend doing?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question13" value="Designing or building something"  />
+                    Designing or building something
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question13"  value="Raiding a dungeon with friends" />
+                    Raiding a dungeon with friends
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question13"  value="Cosplying as your favorite character" />
+                    Cosplying as your favorite character
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question13" value="LARPing"  />
+                    LARPing
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">What future invention do you most look forward to?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question14"  value="Self-driving cars" />
+                    Self-driving cars
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question14" value="Jetpacks"  />
+                    Jetpacks
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question14" value="Fully immersive Virtual Reality"  />
+                    Fully immersive Virtual Reality
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question14" value="Mech-suits"  />
+                    Mech-suits
+                </label>
+            </div>
+        </div>
+        <br />
+
+        <div>
+            <legend class="control-label">Where do you find your entertainment news?</legend>
+            <div class="btn-group-vertical" data-toggle="buttons" style="width:25%;">
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question15" value="Anime News Network"  />
+                    Anime News Network
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question15" value="Polygon"  />
+                    Polygon
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question15" value="TechChrunch"  />
+                    TechChrunch
+                </label>
+                <label class="btn btn-primary" style="text-align:left;">
+                    <input type="radio" name="question15" value="NewsaRama"  />
+                    NewsaRama
+                </label>
+            </div>
+        </div>
+        <br />
+
+
+        <input type="submit" value="Submit" CssClass="btn btn-default" OnClick="submit" />
+    </div>
+</div>
+}

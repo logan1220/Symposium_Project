@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Success";
+}
+
+<div class="well">
+    <h2>Congrats!</h2>
+    <p>Based on your results, we believe you'd fit in the following groups:
+        @foreach (var x in ViewBag.links)
+    {
+        <li>
+            @x
+        </li>
+    }
+    </p>
+    <p>
+    Click on the link to join! Links will expire in 30 minutes.
+    </p>
+</div>
+
+
